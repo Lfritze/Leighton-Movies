@@ -13,7 +13,7 @@ require_once("includes/classes/FormSanitizer.php");
 <html>
 
 <head>
-  <title>Welcome to Leighton Movies</title>
+  <title>Welcome to Leighton-Movies</title>
   <Link rel="stylesheet" type="text/css" href="assets/style/style.css" />
 </head>
 
