@@ -20,7 +20,7 @@ class FormSanitizer {
     return $inputText;
   }
 
-    public static function sanitizeEmail($inputText) {
+    public static function sanitizeFormEmail($inputText) {
     $inputText = strip_tags($inputText);
     $inputText = str_replace(" ", "", $inputText);
     return $inputText;
