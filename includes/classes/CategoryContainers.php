@@ -26,6 +26,8 @@ class CategoryContainers {
     $categoryId = $sqlData["id"];
     $title = $title == null ? $sqlData["name"] : $title;
 
+    
+
     return $title . "<br>";
   }
 }
