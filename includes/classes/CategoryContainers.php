@@ -26,9 +26,28 @@ class CategoryContainers {
     $categoryId = $sqlData["id"];
     $title = $title == null ? $sqlData["name"] : $title;
 
-    
+    if($tvShows && $movies) {
+      $entities = EntityProvider::getEntities($this->con, $categoryId, 30);
+    }   
 
-    return $title . "<br>";
+    else if($tvShows) {
+      // Get tv show entities
+    }
+
+      else {
+      // Get movie entities
+    }
+    if(sizeof($entities) == 0) {
+      return;
+    }
+
+    $entitiesHtml = "";
+
+    foreach($entities as $entity) {
+      $entitiesHtml .= $entity->getName();
+    }
+
+    return $entitiesHtml . "<br>";
   }
 }
 
